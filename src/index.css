@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  padding: 0;
+  margin: 0;
+  color: #212925;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+:root {
+  --primary-color: #f01543;
+  --secondary-color: #fe724c;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --gray-color: #000929;
+}
+
+/* apply global */
+.Container {
+  @apply container mx-auto px-4;
+}
+.Heading {
+  @apply text-[28px] font-bold leading-[140%] tracking-[-0.48px] md:text-5xl;
+}
+.SubTitle {
+  @apply text-2xl font-bold md:text-lg;
+}
+
+.CategoriesItem::before {
+  @apply absolute content-[""] w-[0%] h-full z-[-1] bg-[#f01543] transition-all duration-[0.5s] ease-[ease] delay-[0s] overflow-hidden shadow-[0px_4px_40px_0px_rgba(0,0,0,0.06)] rounded-[20px] right-0 top-0;
+}
+.CategoriesItem:hover::before {
+  @apply w-full left-0 right-auto;
+}
+.CategoriesIcon {
+  @apply text-4xl w-[82px] h-[82px] flex justify-center items-center rounded-[50%] bg-white group-hover:bg-[#D81440] group-hover:text-white;
+}
+.CategoriesIconBullet {
+  @apply relative pl-3.5;
+}
+
+.CategoriesIconBullet::after {
+  @apply absolute content-[''] w-2 h-2 -translate-y-2/4 bg-[#D81440] rounded-[50%] left-0 top-2/4;
+}
+.CategoriesTab{
+    @apply flex flex-wrap justify-center md:justify-between mt-[45px] mb-[48px] border border-solid border-[rgba(240,21,67,0.1)] p-[6px] rounded-[10px] md:w-[600px] mx-auto;   
+}
+.Heading3{
+  @apply text-2xl font-extrabold leading-[150%] tracking-[-1px] text-[#F01543];
+}
+.ProductTitle{
+  @apply text-2xl font-bold leading-[150%] tracking-[-1px] text-[#000929];
+}
+/* Active React Class */
+.Active{
+  @apply bg-[#F01543] text-white;
+}
