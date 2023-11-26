@@ -1,4 +1,4 @@
-import {Categories, PromoBanner, TraditionalFood} from "../../pages"
+import {Categories, CraftingExperience, PromoBanner, TraditionalFood, FaqSection} from "../../pages"
 
 const Home = () => {
   return (
@@ -6,6 +6,8 @@ const Home = () => {
     <Categories />
     <PromoBanner />
     <TraditionalFood />
+    <CraftingExperience />
+    <FaqSection />
     </>
   )
 }

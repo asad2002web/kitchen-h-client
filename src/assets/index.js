@@ -11,4 +11,9 @@ import product2 from "./products/traditional-2.png";
 import product3 from "./products/traditional-3.png";
 import product4 from "./products/traditional-4.png";
 
-export { LoadingImg, CategoriesBg, promoBanner1, promoBanner2, traditionalFood, product1, product2, product3, product4 };
+import ExperienceBg from "./Process-bg.png"
+import Experience1 from "./process-themb.png"
+
+export { LoadingImg, CategoriesBg, promoBanner1, promoBanner2, traditionalFood, product1, product2, product3, product4, ExperienceBg, Experience1 };
+
+// 
