@@ -1,7 +1,7 @@
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div className='Footer'>©2024 Kitchen Haven. All rights reserved</div>
   )
 }
 

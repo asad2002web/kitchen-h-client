@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import { Loading } from "../shared";
-import { Home } from "../pages";
+import { Home, ErrorPage } from "../pages";
 
 
 
@@ -9,7 +9,7 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout />,
-        errorElement: <div>Error 404</div>,
+        errorElement: <ErrorPage />,
         children: [
             {
                 path: "/",

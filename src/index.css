@@ -63,3 +63,8 @@ body {
 .ButtonBorder{
   @apply text-[#6C727F] border-[1.5px] border-solid border-[rgba(211,213,218,0.5)] bg-white rounded-lg;
 }
+
+/* Footer CSS */
+.Footer{
+  @apply bg-[#000929] text-white p-3 text-lg text-center py-3 border-t-2 border-b-[#000929] border-solid border-[rgba(211,213,218,0.5)];
+}
