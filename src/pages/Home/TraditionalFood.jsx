@@ -1,7 +1,7 @@
 import { traditionalFood } from "../../assets"
 import { Heading } from "../../components"
 import { useState } from "react";
-import {FoodCards} from "../../pages";
+import { FoodCards } from "../../pages";
 
 const TraditionalFood = () => {
 
@@ -51,6 +51,10 @@ const TraditionalFood = () => {
                         {activeTab === 4 && <p>Tab 4 Content</p>}
                         {activeTab === 5 && <p>Tab 5 Content</p>}
                         {activeTab === 6 && <p>Tab 6 Content</p>}
+                        <div className="mt-12 pb-[100px]">
+                            <button className="ButtonBorder px-10 py-3 block mx-auto">Browser All
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

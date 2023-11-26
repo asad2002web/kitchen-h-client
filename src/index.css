@@ -59,3 +59,7 @@ body {
 .Active{
   @apply bg-[#F01543] text-white;
 }
+/* Button */
+.ButtonBorder{
+  @apply text-[#6C727F] border-[1.5px] border-solid border-[rgba(211,213,218,0.5)] bg-white rounded-lg;
+}
