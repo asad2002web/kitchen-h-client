@@ -27,7 +27,7 @@ body {
   @apply text-[28px] font-bold leading-[140%] tracking-[-0.48px] md:text-5xl;
 }
 .SubTitle {
-  @apply text-2xl font-bold md:text-lg;
+  @apply md:text-2xl font-bold text-lg;
 }
 
 .CategoriesItem::before {
@@ -46,25 +46,91 @@ body {
 .CategoriesIconBullet::after {
   @apply absolute content-[''] w-2 h-2 -translate-y-2/4 bg-[#D81440] rounded-[50%] left-0 top-2/4;
 }
-.CategoriesTab{
-    @apply flex flex-wrap justify-center md:justify-between mt-[45px] mb-[48px] border border-solid border-[rgba(240,21,67,0.1)] p-[6px] rounded-[10px] md:w-[600px] mx-auto;   
+.CategoriesTab {
+  @apply flex flex-wrap justify-center md:justify-between mt-[45px] mb-[48px] border border-solid border-[rgba(240,21,67,0.1)] p-[6px] rounded-[10px] md:w-[600px] mx-auto;
 }
-.Heading3{
+.Heading3 {
   @apply text-2xl font-extrabold leading-[150%] tracking-[-1px] text-[#F01543];
 }
-.ProductTitle{
+.ProductTitle {
   @apply text-2xl font-bold leading-[150%] tracking-[-1px] text-[#000929];
 }
 /* Active React Class */
-.Active{
+.Active {
   @apply bg-[#F01543] text-white;
 }
 /* Button */
-.ButtonBorder{
+.ButtonBorder {
   @apply text-[#6C727F] border-[1.5px] border-solid border-[rgba(211,213,218,0.5)] bg-white rounded-lg;
 }
 
 /* Footer CSS */
-.Footer{
+.Footer {
   @apply bg-[#000929] text-white p-3 text-lg text-center py-3 border-t-2 border-b-[#000929] border-solid border-[rgba(211,213,218,0.5)];
+}
+
+.main-btn-three {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  appearance: none;
+  outline: none;
+  background-color: #fff;
+  border: 1.5px solid rgba(211, 213, 218, 0.5);
+  color: var(--grey-scale-500);
+  width: 100%;
+  height: 54px;
+  transition: all 0.5s linear;
+  overflow: hidden;
+  z-index: 1;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.09px;
+  text-align: center;
+  line-height: 54px;
+  border-radius: 10px;
+}
+.main-btn-three:hover::before {
+  transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+}
+.main-btn-three:hover::after {
+  transform: translate3d(0, 0, 0);
+  transition-duration: 0.05s;
+  transition-delay: 0.4s;
+  transition-timing-function: linear;
+}
+.main-btn-three:before {
+  position: absolute;
+  content: "";
+  background-color: var(--primary-color);
+  width: 120%;
+  height: 0;
+  padding-bottom: 120%;
+  top: -110%;
+  left: -10%;
+  border-radius: 50%;
+  transform: translate3d(0, 68%, 0) scale3d(0, 0, 0);
+  z-index: -1;
+}
+.main-btn-three:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: var(--primary-color);
+  transform: translate3d(0, -100%, 0);
+  transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+  z-index: -1;
+}
+
+/* Process */
+.ProcessItem::before {
+  @apply absolute content-[""] h-[0%] w-full z-[-1] [background:linear-gradient(305deg,#f01543_-22.35%,#fe724c_134.49%)] transition-all duration-[0.5s] ease-[ease] delay-[0s] overflow-hidden shadow-[0px_4px_40px_0px_rgba(0,0,0,0.06)] rounded-[20px] bottom-0 left-0;
+}
+.ProcessItem:hover::before {
+  @apply h-full top-0 bottom-auto;
 }

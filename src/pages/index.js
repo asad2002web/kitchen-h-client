@@ -1,4 +1,5 @@
 export {default as ErrorPage} from './ErrorPage/ErrorPage';
+import CustomerSay from './Home/CustomerSay/CustomerSay';
 export {default as Home} from './Home/Home';
 export {default as Categories} from './Home/Categories';
 export {default as CategoriesItem} from './Home/CategoriesItem';
@@ -8,3 +9,4 @@ export {default as CraftingExperience} from './Home/CraftingExperience/CraftingE
 export {default as FoodCards} from './Home/FoodCards/FoodCards';
 export {default as FoodSingleCard} from './Home/FoodCards/FoodSingleCard';
 export {default as FaqSection} from './Home/FaqSection/FaqSection';
+export {default as CustomerSay} from './Home/CustomerSay/CustomerSay';

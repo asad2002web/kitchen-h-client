@@ -36,7 +36,7 @@ const FoodSingleCard = ({ food }) => {
                     <FaRegCircleCheck className="text-[#FE724C]" />
                     <span>{desc}</span>
                 </p>)}</p>
-                <div className="ButtonBorder flex items-center justify-center w-full mt-4 p-2 leading-[54px] h-[54px] text-lg font-[500]">
+                <div className=" main-btn-three ButtonBorder flex items-center justify-center w-full mt-4 p-2 leading-[54px] h-[54px] text-lg font-[500]">
                     <Link className="w-full h-full flex items-center justify-center gap-2" to={`/`}>
                         <FaCartPlus />
                         <span>Add to Cart</span>
